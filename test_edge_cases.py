@@ -21,7 +21,7 @@ def test_library(name , test_func):
         except Exception as e:
             print(f"    ❌ Failed - {str(e)[:50]}")
 
-def test_pymupdf(pdf_path):
+def test_pymupdf(pdf_path): 
     doc = fitz.open(pdf_path)
     text = ""
     for page in doc:
